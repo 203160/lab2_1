@@ -20,6 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+    sonarQubeRunAnalysis: false
 
 - task: SonarCloudPrepare@1
   inputs:
