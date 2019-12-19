@@ -28,3 +28,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     sonarQubeRunAnalysis: true
+
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
