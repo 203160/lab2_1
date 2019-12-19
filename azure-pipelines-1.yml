@@ -23,11 +23,3 @@ steps:
         sqMavenPluginVersionChoice: 'latest'
         checkStyleRunAnalysis: true
         pmdRunAnalysis: false
-
-        - task: SonarCloudPrepare@1
-          inputs:
-            SonarCloud: 'SonarConnection'
-            organization: 'projekytiuczk'
-            scannerMode: 'MSBuild'
-            projectKey: 'edu.iis.mto:lab2_1'
-            projectName: 'edu.iis.mto:lab2_1'
